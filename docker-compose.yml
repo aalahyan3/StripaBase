@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:lts
+    working_dir: /app
+    container_name: next_app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm run dev"
+    networks:
+      - net
+  stripe-listener:
+    image: stripe/stripe-cli:latest
+    container_name: stripe_listener
+    env_file:
+      - .env
+    command: listen --forward-to http://app:3000/api/stripe/webhook
+    environment:
+      - STRIPE_API_KEY=${STRIPE_SECRET_KEY}
+    depends_on:
+      - app
+    networks:
+      - net
+networks:
+  net:
+    driver: bridge
