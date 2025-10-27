@@ -67,7 +67,7 @@ export default function LandingPage() {
                 Try the Demo
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-              <Link href="#" target="_blank" rel="noopener noreferrer" className="flex-1 border border-border bg-background text-foreground font-semibold px-6 py-3 rounded-lg hover:bg-accent transition-colors text-center">
+              <Link href="https://github.com/aalahyan3/StripaBase" target="_blank" rel="noopener noreferrer" className="flex-1 border border-border bg-background text-foreground font-semibold px-6 py-3 rounded-lg hover:bg-accent transition-colors text-center">
                 View Source
               </Link>
             </div>
