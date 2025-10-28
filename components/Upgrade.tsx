@@ -37,7 +37,7 @@ function Upgrade({profile}: {profile: Profile}) {
 
 
   return (
-    <div className=" flex w-full items-center justify-center p-4">
+    <div className=" flex w-full items-center justify-center md:p-4">
       <Card className="w-full  max-w-[1000px]">
         <CardHeader className="space-y-1">
           <div className="flex items-center gap-2">

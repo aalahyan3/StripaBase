@@ -24,7 +24,7 @@ export  default async function RootLayout({
 
 
     return (
-        <div className="h-screen   p-4">
+        <div className="h-screen   md:p-4">
             <div className=" py-2 px-1 rounded md:p-6 text-foreground/90 flex justify-end">
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
