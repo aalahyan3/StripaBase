@@ -104,6 +104,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center text-xs text-muted-foreground">
             <span>© 2025 StripaBase Demo</span>
+            <span>UI is Ai generated my focus was on creating webhooks and server code for thr functionality.</span>
             <span>Stripe Test Mode</span>
           </div>
         </div>
